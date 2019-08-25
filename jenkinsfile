@@ -9,4 +9,5 @@ node {
     }
     stage('deploy'){
         sh "cd ansible && ansible-playbook -i inventory playbook.yml" 
+        }
 }
