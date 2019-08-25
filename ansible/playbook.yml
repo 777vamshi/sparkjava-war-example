@@ -1,0 +1,7 @@
+- name: copy the war file
+  hosts: all
+  tasks:
+    - name: copy the war file from local toremote
+      copy:
+        src: /var/lib/jenkins/workspace/sample-pipeline/target/sparkjava-hello-world-1.0.war
+        dest: /opt
